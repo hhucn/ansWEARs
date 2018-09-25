@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/controlElementTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/control_listener_text" />
+
+            <Button
+                android:id="@+id/controlelement_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/control_button" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/location_location_text" />
+
+            <TextView
+                android:id="@+id/satellites"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/location_satellite_text" />
+
+            <Button
+                android:id="@+id/locationscan_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/location_button" />
+
+            <TextView
+                android:id="@+id/wifistatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wifi_status_text" />
+
+            <TextView
+                android:id="@+id/wifi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wifi_ap_text" />
+
+            <Button
+                android:id="@+id/wificonnect_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wifi_connect_button" />
+
+            <Button
+                android:id="@+id/wifidisconnect_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wifi_disconnect_button" />
+
+            <Button
+                android:id="@+id/wifirefresh_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wifi_refresh_button" />
+
+            <Button
+                android:id="@+id/wifiscan_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wifi_scan_button" />
+
+            <TextView
+                android:id="@+id/bluetoothBounded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bluetooth_text" />
+
+            <TextView
+                android:id="@+id/bluetoothAvailable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/bluetoothscan_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bluetooth_button" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sensor_accelerometer_text" />
+
+                <TextView
+                    android:id="@+id/accelerometerx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sensor_x" />
+
+                <TextView
+                    android:id="@+id/accelerometery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sensor_y" />
+
+                <TextView
+                    android:id="@+id/accelerometerz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sensor_z" />
+
+                <Switch
+                    android:id="@+id/accelerometerSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="94dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sensor_temperature_text" />
+
+                <TextView
+                    android:id="@+id/temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.47"
+                    android:text="@string/sensor_celsius"
+                    android:textAlignment="textStart" />
+
+                <Switch
+                    android:id="@+id/temperatureSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sensor_gravity_text" />
+
+                <TextView
+                    android:id="@+id/gravityx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sensor_x" />
+
+                <TextView
+                    android:id="@+id/gravityy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sensor_y" />
+
+                <TextView
+                    android:id="@+id/gravityz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sensor_z" />
+
+                <Switch
+                    android:id="@+id/gravitySwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sensor_gyroscope_text" />
+
+                <TextView
+                    android:id="@+id/gyroscopex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sensor_x" />
+
+                <TextView
+                    android:id="@+id/gyroscopey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sensor_y" />
+
+                <TextView
+                    android:id="@+id/gyroscopez"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sensor_z" />
+
+                <Switch
+                    android:id="@+id/gyroscopeSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sensor_light_text" />
+
+                <TextView
+                    android:id="@+id/light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.18"
+                    android:text="@string/sensor_lux"
+                    android:textAlignment="textStart" />
+
+                <Switch
+                    android:id="@+id/lightSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="102dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sensor_linear_acceleration_text" />
+
+                <TextView
+                    android:id="@+id/accelerationx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sensor_x" />
+
+                <TextView
+                    android:id="@+id/accelerationy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sensor_y" />
+
+                <TextView
+                    android:id="@+id/accelerationz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sensor_z" />
+
+                <Switch
+                    android:id="@+id/accelerationSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="103dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sensor_magnetic_field_text" />
+
+                <TextView
+                    android:id="@+id/magneticx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sensor_x" />
+
+                <TextView
+                    android:id="@+id/magneticy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sensor_y" />
+
+                <TextView
+                    android:id="@+id/magneticz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sensor_z" />
+
+                <Switch
+                    android:id="@+id/magneticSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="68dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.30"
+                    android:text="@string/sensor_pressure_text" />
+
+                <TextView
+                    android:id="@+id/pressure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.04"
+                    android:text="@string/sensor_hPa" />
+
+                <Switch
+                    android:id="@+id/pressureSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="68dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.33"
+                    android:text="@string/sensor_proximity_text" />
+
+                <TextView
+                    android:id="@+id/proximity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.20"
+                    android:text="@string/sensor_cm" />
+
+                <Switch
+                    android:id="@+id/proximitySwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.35"
+                    android:text="@string/sensor_humidity_text" />
+
+                <TextView
+                    android:id="@+id/humidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.21"
+                    android:text="@string/sensor_percent" />
+
+                <Switch
+                    android:id="@+id/humiditySwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.87"
+                    android:text="@string/sensor_rotation_vector_text"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/rotationx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.01"
+                    android:text="@string/sensor_x" />
+
+                <TextView
+                    android:id="@+id/rotationy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.87"
+                    android:text="@string/sensor_y" />
+
+                <TextView
+                    android:id="@+id/rotationz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.93"
+                    android:text="@string/sensor_z" />
+
+                <Switch
+                    android:id="@+id/rotationSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.87" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.95"
+                    android:text="@string/sensor_rotation_vector_gaming" />
+
+                <TextView
+                    android:id="@+id/grotationx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.21"
+                    android:text="@string/sensor_x" />
+
+                <TextView
+                    android:id="@+id/grotationy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sensor_y" />
+
+                <TextView
+                    android:id="@+id/grotationz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.12"
+                    android:text="@string/sensor_z" />
+
+                <Switch
+                    android:id="@+id/grotationSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.95" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.28"
+                    android:text="@string/sensor_step_counter_text" />
+
+                <TextView
+                    android:id="@+id/steps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.77"
+                    android:text="@string/sensor_steps" />
+
+                <Switch
+                    android:id="@+id/stepsSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.28" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.28"
+                    android:text="@string/sensor_heart_rate_text" />
+
+                <TextView
+                    android:id="@+id/heartRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.77"
+                    android:text="@string/sensor_hearRate" />
+
+                <Switch
+                    android:id="@+id/heartRateSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.28" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/sensorstart_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sensor_enable_button" />
+
+            <Button
+                android:id="@+id/sensorstop_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09"
+                android:text="@string/sensor_disable_button"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/audio_controls_text"
+                android:textAlignment="textStart"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/audioStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/audio_status_text" />
+
+            <Button
+                android:id="@+id/startrecord_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/audio_record_button" />
+
+            <Button
+                android:id="@+id/stoprecord_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/audio_stop_button" />
+
+            <Button
+                android:id="@+id/playrecord_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/audio_play_button" />
+
+            <Space
+                android:layout_width="10sp"
+                android:layout_height="50sp" />
+
+            <Button
+                android:id="@+id/terminate_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/terminate_button" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

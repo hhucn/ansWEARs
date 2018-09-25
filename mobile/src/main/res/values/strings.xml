@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">ansWEARs</string>
+
+    <!-- Control-Elements-->
+    <string name="control_listener_text">Not listening for control element events</string>
+    <string name="control_listener_text_on">Listening for control element events!</string>
+    <string name="control_toast_text">Touch-Event on your Wearable detected!</string>
+    <string name="control_button">Start control element-listener</string>
+
+    <!-- Location-->
+    <string name="location_location_text">Current location</string>
+    <string name="location_satellite_text">Satellite information</string>
+    <string name="location_button">Scan location</string>
+    <string name="location_satellites_found">Satellite-Counter: %1$d\n</string>
+    <string name="location_found">
+        Address: %1$s\n Longitude: %2$f\n Latitude: %3$f\n Satellites used: %4$d\n Time: %5$s\n
+    </string>
+
+
+    <!-- WiFi-->
+    <string name="wifi_status_text">WiFi-Status:</string>
+    <string name="wifi_ap_text">WiFi-APs:</string>
+    <string name="wifi_connect_button">Connect</string>
+    <string name="wifi_connect_dialog_title">Add WiFi-Network</string>
+    <string name="wifi_connect_dialog_hint_name">Network name</string>
+    <string name="wifi_connect_dialog_hint_password">Password</string>
+    <string name="wifi_connect_dialog_button_add">ADD</string>
+    <string name="wifi_connect_dialog_button_cancel">Cancel</string>
+    <string name="wifi_connect_dialog_missing_name">Network name missing</string>
+    <string name="wifi_disconnect_button">Disconnect</string>
+    <string name="wifi_refresh_button">Refresh</string>
+    <string name="wifi_scan_button">Scan</string>
+    <string name="wifi_connected">Device connected to %1$s using %2$s\n</string>
+    <string name="wifi_no_connection">Device is not connected to any WiFi-Network\n</string>
+    <string name="wifi_no_networks">No WiFi-Networks found nearby\n</string>
+
+    <!-- Bluetooth-->
+    <string name="bluetooth_text">Bluetooth-Hubs:</string>
+    <string name="bluetooth_button">Scan</string>
+    <string name="bluetooth_bond_found">Bonded devices found:\n</string>
+    <string name="bluetooth_bond_not_found">No bond device found!</string>
+    <string name="bluetooth_available_found">Available devices found:\n</string>
+    <string name="bluetooth_available_not_found">No available device found!</string>
+
+    <!-- Sensors-->
+    <string name="sensor_accelerometer_text">Accelerometer</string>
+    <string name="sensor_temperature_text">Temperature</string>
+    <string name="sensor_gravity_text">Gravity</string>
+    <string name="sensor_gyroscope_text">Gyroscope</string>
+    <string name="sensor_light_text">Light</string>
+    <string name="sensor_linear_acceleration_text">Linear-Acceleration</string>
+    <string name="sensor_magnetic_field_text">Magnetic-Field</string>
+    <string name="sensor_pressure_text">Pressure</string>
+    <string name="sensor_proximity_text">Proximity</string>
+    <string name="sensor_humidity_text">Humidity</string>
+    <string name="sensor_rotation_vector_text">Rotation-Vector</string>
+    <string name="sensor_rotation_vector_gaming">Rotation-Vector-G</string>
+    <string name="sensor_step_counter_text">Steps</string>
+    <string name="sensor_heart_rate_text">HeartRate</string>
+    <string name="sensor_enable_button">Enable sensors</string>
+    <string name="sensor_disable_button">Disable sensors</string>
+
+    <string name="sensor_x">X=</string>
+    <string name="sensor_y">Y=</string>
+    <string name="sensor_z">Z=</string>
+    <string name="sensor_celsius">Celsius</string>
+    <string name="sensor_lux">Lux</string>
+    <string name="sensor_hPa">hPa</string>
+    <string name="sensor_cm">cm</string>
+    <string name="sensor_percent">%</string>
+    <string name="sensor_steps">Steps</string>
+    <string name="sensor_hearRate">BPM</string>
+
+    <!-- Audio-->
+    <string name="audio_controls_text">Audio controls</string>
+    <string name="audio_status_text">Status:</string>
+    <string name="audio_record_button">Record</string>
+    <string name="audio_stop_button">Stop</string>
+    <string name="audio_play_button">Play</string>
+
+    <string name="audio_sample_received">New audio sample received. Press Play!</string>
+    <string name="audio_sample_failed">Failed to download requested audio sample</string>
+
+    <string name="terminate_button">Terminate wear application</string>
+
+</resources>
